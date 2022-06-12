@@ -25,10 +25,15 @@ Update settings.py:
 
 ~~~python
 INSTALLED_APPS = (
-    ...
     'corsheaders',
-    ...
 )
+~~~
+
+~~~python
+MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
+]
 ~~~
 
 ~~~python
@@ -42,7 +47,7 @@ CORS_ALLOW_HEADERS = [
 'user-agent',
 'x-csrftoken',
 'x-requested-with',
-'Access-Control-Allow-Origin'
+'Access-Control-Allow-Origin',
 ]
 ~~~
 
