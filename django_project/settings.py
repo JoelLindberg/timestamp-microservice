@@ -144,3 +144,5 @@ CORS_ALLOW_HEADERS = [
 CORS_ALLOWED_ORIGINS = [
     'https://www.freecodecamp.org',
 ]
+
+APPEND_SLASH = False
