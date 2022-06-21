@@ -27,8 +27,8 @@ Example json with unix and utc keys:
 
 ~~~json
 {
-    unix: <int with unix time in milliseconds>, 
-    utc: <string with custom time format: 'Fri, 25 Dec 2015 00:00:00 GMT'>
+    "unix": 1451001600000, 
+    "utc": "Fri, 25 Dec 2015 00:00:00 GMT"
 }
 ~~~
 
